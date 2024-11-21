@@ -1,4 +1,6 @@
 export default function handler(req, res) {
+    res.setHeader("Access-Control-Allow-Origin", "*"); // Allow all origins
+    
     if (req.method === 'GET') {
         // Handle GET request
         res.status(200).json({ message: 'This is a GET request' });
