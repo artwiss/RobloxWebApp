@@ -1,6 +1,4 @@
 export default function handler(req, res) {
-    console.log('Headers:', req.headers);
-    console.log('Method:', req.method);
     res.setHeader("Access-Control-Allow-Origin", "*"); // Allow all origins
 
     if (req.method === 'GET') {
